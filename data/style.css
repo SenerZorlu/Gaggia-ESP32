@@ -1,0 +1,212 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:100,300'); */
+
+@font-face{
+  font-family: 'Roboto';
+  src: url(Roboto-Regular.ttf); 
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif; 
+  display: inline-block; 
+  text-align: center;
+}
+h1 {
+  font-size: 1.8rem; 
+  color: white;
+}
+p { 
+  font-size: 1.4rem;
+}
+.topnav { 
+  overflow: hidden; 
+  background-color: #0A1128;
+}
+body {  
+  margin: 0;
+}
+.content { 
+  padding: 5%;
+}
+.card-grid { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: grid; 
+  grid-gap: 2rem; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card { 
+  background-color: white; 
+  box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+}
+.card-title { 
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5e6b95
+}
+
+
+
+
+
+
+.coffee_icon{
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    width: 25px;
+    height: 30px;
+    color: #F7958E;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    /* top: 30px; */
+    width: 300px;
+	height: 300px;
+    margin: 0 auto;
+}
+
+.controlls {
+    position: absolute;
+	width:150px;
+    left: 75px;
+    top: 105px;
+    text-align: center;
+}
+.display-remain-time {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 65px;
+    color: #F7958E;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+
+.e-c-base {
+    fill: none;
+    stroke: #B6B6B6;
+    stroke-width: 4px
+}
+.e-c-progress {
+    fill: none;
+    stroke: #F7958E;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 0.7s;
+}
+.e-c-pointer {
+    fill: #FFF;
+    stroke: #F7958E;
+    stroke-width: 2px;
+}
+#e-pointer {
+    transition: transform 0.7s;
+}
+
+#heater {
+	float:left;
+}
+
+#settings{
+	float:right;
+}
+
+.range_input {
+  width:300px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.settings_label{
+  width: 40%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 100%;
+}
+.settings_input{
+  margin-left: 20px;
+  float:left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.settings_container{
+  text-align: left;
+  height:35px;
+}
+input[type=submit]{
+  background-color: #F7958E;
+  height: 50px;
+  font-size: larger;
+  padding: 0px 20px;
+  color: white;
+}
+

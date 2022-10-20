@@ -1,0 +1,131 @@
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>GAGGIA SETTINGS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">
+        
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="48" height="48" viewBox="0 0 256 256" xml:space="preserve" style="float:left;padding:11px;">
+
+        <defs>
+        </defs>
+        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: white; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+          <path d="M 24.316 44.248 l 16.193 -15.342 c 0.66 -0.625 1.748 -0.157 1.748 0.752 v 7.873 c 0 0.572 0.464 1.036 1.036 1.036 h 22.149 c 0.572 0 1.036 0.464 1.036 1.036 v 10.795 c 0 0.572 -0.464 1.036 -1.036 1.036 H 43.293 c -0.572 0 -1.036 0.464 -1.036 1.036 v 7.873 c 0 0.909 -1.088 1.377 -1.748 0.752 L 24.316 45.752 C 23.885 45.343 23.885 44.657 24.316 44.248 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+          <path d="M 45 90 c 24.813 0 45 -20.187 45 -45 C 90 20.187 69.813 0 45 0 C 20.187 0 0 20.187 0 45 C 0 69.813 20.187 90 45 90 z M 45 8 c 20.402 0 37 16.598 37 37 c 0 20.402 -16.598 37 -37 37 C 24.598 82 8 65.402 8 45 C 8 24.598 24.598 8 45 8 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+        </g>
+        </svg>
+      </a>
+      <h1>GAGGIA SETTINGS</h1>
+    </div>
+    <div class="content">
+      <form action="/post" method="post">
+        <div class="settings_container">
+          <div class="settings_label">
+            Set Temperature (°C):
+          </div>
+          <div class="settings_input">
+            <input type="range" class="range_input" id="tempInput" name="tempInput" min="0" max="120" value="%setTemp%" oninput="tempamount.value=tempInput.value">                                                       
+            <output id="tempamount" name="tempamount" for="tempInput">%setTemp%</output>
+          </div>
+        </div>
+        </br></br>
+
+        <div class="settings_container">
+          <div class="settings_label">
+            Display Offset Temperature (°C):
+          </div>
+          <div class="settings_input">
+            <input type="range" class="range_input" id="offsetInput" name="offsetInput" min="0" max="10" value="%setOffset%" oninput="offsetamount.value=offsetInput.value">                                                       
+            <output id="offsetamount" name="offsetamount" for="offsetInput">%setOffset%</output>
+          </div>
+        </div>
+        </br></br>
+
+        <div class="settings_container">
+          <div class="settings_label">
+            Pump Brew Pressure (ratio):
+          </div>
+          <div class="settings_input">
+            <input type="range" class="range_input" id="PP" name="PPInput" min="0" max="100" value="%PP%" oninput="PPamount.value=PPInput.value">                                                       
+            <output id="PPamount" name="PPamount" for="PPInput">%PP%</output>
+          </div>
+        </div>
+        </br></br>
+
+        <div class="settings_container">
+          <div class="settings_label">
+            Pre Infusion :
+          </div>
+          <div class="settings_input">
+            <label class="switch">
+              <input id="preinfcheck" name ="PICheck" type="checkbox" %PreInfusion%>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        </br></br>
+
+        <div class="settings_container">
+          <div class="settings_label">
+            Pump Preinfusion Pressure (ratio):
+          </div>
+          <div class="settings_input">
+            <input type="range" class="range_input" id="PI" name="PIInput" min="0" max="100" value="%PI%" oninput="PIamount.value=PIInput.value">                                                       
+            <output id="PIamount" name="PIamount" for="PIInput">%PI%</output>
+          </div>
+        </div>
+        </br></br>
+
+        <div class="settings_container">
+          <div class="settings_label">
+            Preinfusion Time (s):
+          </div>
+          <div class="settings_input">
+            <input type="range" class="range_input" id="PItime" name="PItime" min="3" max="10" value="%PItime%" oninput="PItimeamount.value=PItime.value">                                                       
+            <output id="PItimeamount" name="PItimeamount" for="PItime">%PItime%</output>
+          </div>
+        </div>
+        </br></br>
+
+        <div class="settings_container">
+          <div class="settings_label">
+            Soak Time (s):
+          </div>
+          <div class="settings_input">
+            <input type="range" class="range_input" id="Soaktime" name="Soaktime" min="0" max="10" value="%Soaktime%" oninput="Soaktimeamount.value=Soaktime.value">                                                       
+            <output id="Soaktimeamount" name="Soaktimeamount" for="Soaktime">%Soaktime%</output>
+          </div>
+        </div>
+        </br></br>
+
+		    <input type="submit" value="Save">
+
+      </form>
+      <form action="/reset" method="post">
+        <input type="submit" value="Reset To Defaults" style=" float: right;">
+      </form>
+      <script type="text/javascript">
+          document.getElementById('preinfcheck').onchange = function() {
+          document.getElementById('PI').disabled = !this.checked;
+          document.getElementById('PItime').disabled = !this.checked;
+          document.getElementById('Soaktime').disabled = !this.checked;
+        };
+        document.addEventListener("DOMContentLoaded", function() {
+          var _checkbox = document.getElementById('preinfcheck');
+          document.getElementById('PI').disabled = !_checkbox.checked;
+          document.getElementById('PItime').disabled = !_checkbox.checked;
+          document.getElementById('Soaktime').disabled = !_checkbox.checked;
+        });
+      </script>
+    </div>
+
+    
+  </body>
+  
+</html>
